@@ -8,9 +8,9 @@ summary: |-
 upstream:
   url: https://krita.org/en/
   version:
-    type: command
-    run: |-
-      curl -sL https://download.kde.org/stable/krita/updates/Krita-Stable-x86_64.appimage.zsync | awk -F'(krita-|-x86_64)' '/URL: https/ {print $2}'
+    type: regex
+    url: https://download.kde.org/stable/krita/updates/Krita-Stable-x86_64.appimage.zsync
+    pattern: '^URL: https.*?krita-(.+?)-x86_64'
 
 release:
   branch: master
