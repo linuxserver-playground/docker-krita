@@ -11,6 +11,13 @@ upstream:
     type: regex
     url: https://download.kde.org/stable/krita/updates/Krita-Stable-x86_64.appimage.zsync
     pattern: '^URL: https.*?krita-(.+?)-x86_64'
+  sponsor:
+  - name: Krita donations
+    url: https://krita.org/en/donations/
+  - name: Krita Development Fund
+    url: https://fund.krita.org/
+  - name: Krita on Liberapay
+    url: https://liberapay.com/Krita
 
 release:
   branch: master
